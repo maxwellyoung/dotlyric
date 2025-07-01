@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;700&display=swap");
+
+@layer base {
+  body {
+    @apply bg-black text-white font-mono;
+  }
+}
+
+@layer components {
+  .dot-grid-container {
+    @apply flex items-center justify-center bg-black;
+  }
+
+  .control-slider {
+    @apply w-full h-8 bg-gray-800 rounded-lg appearance-none cursor-pointer;
+  }
+
+  .control-slider::-webkit-slider-thumb {
+    @apply appearance-none w-6 h-6 bg-white rounded-full cursor-pointer;
+  }
+
+  .control-slider::-moz-range-thumb {
+    @apply w-6 h-6 bg-white rounded-full cursor-pointer border-none;
+  }
+}
